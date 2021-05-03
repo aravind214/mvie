@@ -1,0 +1,26 @@
+USE [MovieReviewDb]
+GO
+
+/****** Object:  Table [dbo].[Movies]    Script Date: 5/3/2021 5:13:08 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Movies](
+	[MovieId] [int] IDENTITY(1,1) NOT NULL,
+	[MovieName] [varchar](255) NULL,
+	[DirectorName] [varchar](255) NULL,
+	[MoviewImageId] [int] NULL,
+	[ReleasedDate] [date] NULL,
+	[Feedback] [varchar](50) NULL,
+	[Images] [varchar](500) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[MovieId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
